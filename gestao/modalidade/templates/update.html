@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalidade</title>
+</head>
+<body>
+    
+    {{modalidade.id}} - {{modalidade.nome}} 
+
+    <!-- <a href="{% url 'editar' modalidade.id %}" >editar</a></li>
+    {% endfor % -->
+
+   <form action="{% url 'salvar' %}" method="POST">
+        {% csrf_token %}
+
+        
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao">
+
+        <label for="local">Local:</label>
+        <input type="text" name="local" id="local">
+
+
+    </form>
+</body>
+</html>
