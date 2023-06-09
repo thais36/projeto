@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <ul>
+
+        {% for pessoa in pessoa %}
+        <li> {{pessoa.id}} - {{pessoa.nome}} 
+        <a href="{% url 'editar' pessoa.id %}" >Editar</a>
+        <a href="{% url 'delete' pessoa.id %}" >Deletar</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <form action="{% url 'salvar' %}" method="POST">
+        {% csrf_token %}
+
+        {{ form.aluno }}<span align="right">{{ form.aluno.label_tag }}</span>
+        {{ form.atleta }}<span align="right">{{ form.atleta.label_tag }}</span>
+        {{ form.professor }}<span align="right">{{ form.professor.label_tag }}</span>
+        {{ form.outros }}<span align="right">{{ form.outros.label_tag }}</span>
+
+        
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" id="nome">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <label for="telefone">Telefone:</label>
+        <input type="number" id="telefone" name="telefone">
+        <label for="curso">Curso:</label>
+        <input type="text" name="curso" id="curso"> 
+        <label for="semestre">Semestre:</label>
+        <input type="number" id="semestre" name="semestre">
+
+        <label for="cep">CEP:</label>
+        <input type="number" name="cep" id="cep">
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco">
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" name="numero">
+        <label for="complemento">Complemento:</label>
+        <input type="text" name="complemento" id="complemento">
+        <label for="bairro">Bairro:</label>
+        <input type="text" name="bairro" id="bairro">
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade">
+        <label for="estado">estado:</label>
+        <input type="text" name="estado" id="estado">  
+
+        <button type="submit">Salvar</button>"
+
+       <!-- <input type="submit" value="salvar"> -->
+
+
+    </form>
+    
+</body>
+</html>
