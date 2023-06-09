@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.login {
+    color: #630101;
+    max-width: 456px;
+    width: 100%;
+    min-height: 248px;
+    height: auto;
+    position: relative;
+    background: #F5F5F5;
+    margin: 70px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(97, 2, 2, 0.1), 0 2px 4px rgba(74, 2, 2, 0.04);
+    padding: 32px 80px;
+
+}
+
+.login__titulo {
+    padding-top: 10%;
+    color: #630101;
+    font-size: 30px;
+}
+
+.login__form {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.login__form-campo {
+    padding-top: 3%;
+}
+
+.campo__input-senha {
+    margin-top: 25px;
+    width: 18rem;
+    border-radius: 5px;
+}
+
+.campo__input-email {
+    margin-top: 25px;
+    width: 20rem;
+    border-radius: 4px;
+}
+
+.botao {
+    color: #630101;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    width: 120px;
+    height: 3rem;
+    border-radius: 9px;
+    border: 2px rgb(87, 5, 5) solid;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.botao:hover {
+    border-color: yellow;
+    cursor: pointer;
+}
+
+.login__form-botao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link__recuperarSenha {
+    color: #630101;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.link__recuperarSenha:hover {
+    color: yellow;
+}
+
+
+/*
+.campo__label-email{}
+.campo__label-senha{}
+.login__form-link{}
+
+}
+*/

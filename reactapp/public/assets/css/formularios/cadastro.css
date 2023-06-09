@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro {
+    color: #630101;
+    max-width: 456px;
+    width: 100%;
+    min-height: 248px;
+    height: auto;
+    position: center;
+    background: #F5F5F5;
+    margin: 70px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(97, 2, 2, 0.1), 0 2px 4px rgba(74, 2, 2, 0.04);
+    padding: 32px 80px;
+}
+
+.cadastro__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form__titulo {
+    padding-top: 10%;
+    color: #630101;
+    font-size: 30px;
+}
+
+.form__campos {
+    padding-top: 1%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.select {
+    border-radius: 4px;
+    height: 24px;
+}
+
+.botao__cadastrar {
+    color: #630101;
+    font-weight: bold;
+    font-size: 16px;
+    width: 120px;
+    height: 3rem;
+    border-radius: 9px;
+    border: 2px rgb(87, 5, 5) solid;
+}
+
+.botao__cadastrar:hover {
+    border-color: yellow;
+    cursor: pointer;
+}
+
+.form__campos label {
+    padding-top: 1rem;
+    padding-left: 0.3rem;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.form__campos input {
+    border-radius: 4px;
+    height: 24px;
+}
+
+
+
+/*
+.campo__label-email{}
+.campo__label-senha{}
+.login__form-link{}
+.login__form-botao{}
+
+}
+*/

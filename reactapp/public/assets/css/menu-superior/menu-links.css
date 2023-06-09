@@ -1,0 +1,87 @@
+.menu__links {
+    display: flex;
+    list-style: none;
+    
+}
+
+.menu__links li {
+    margin-left: 1.5em;
+}
+
+.menu__links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--menu-cor);
+}
+
+.menu__links a:hover {
+    color: var(--menu-hover);
+}
+
+
+@media screen and (max-width: 1260px) {
+    .menu__links {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .menu__links a {
+        line-height: 2em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu__links {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .menu__links a {
+        line-height: 2em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .menu__links {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: absolute;
+        left: -300px;
+        transition: .4s;
+    }
+    .menu__links a {
+        line-height: 2em;
+    }
+    .menu__botao:checked ~ .menu__links {
+        display: flex;
+        transform: translateX(300px);
+        position: relative;
+    }
+    .menu__links li {
+        margin-left: 0;
+    }
+
+} 
+
+.carrinho-link {
+    position: relative;
+  }
+  
+  .carrinho-link img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .carrinho-link::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-image: url("./assets/img/loja/carts.png");
+    background-size: cover;
+    z-index: 1; /* Define um valor maior para o z-index para que fique acima dos outros menus */
+  }

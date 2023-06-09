@@ -1,0 +1,19 @@
+.contato__fieldset {
+    padding: 35px;
+    border: none;
+    margin-top: 1em;
+    width: 30%;
+    border: 2px solid var(--formulario-borda);
+}
+
+@media screen and (max-width: 1024px) {
+    .contato__fieldset {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contato__fieldset {
+        width: 90%;
+    }
+}

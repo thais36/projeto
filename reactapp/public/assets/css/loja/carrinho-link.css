@@ -1,0 +1,53 @@
+.carrinho-link {
+    display: inline-block; /* Torna o link um bloco com largura do conteúdo */
+    position: relative; /* Permite posicionar o ícone */
+  }
+  
+  .carrinho-link img {
+    width: 30px; /* Largura da imagem do carrinho */
+    height: 30px; /* Altura da imagem do carrinho */
+  }
+  
+  .carrinho-link::after {
+    content: ""; /* Adiciona um conteúdo vazio */
+    position: absolute; /* Posiciona o ícone em relação ao link */
+    top: -5px; /* Ajusta a posição verticalmente */
+    right: -5px; /* Ajusta a posição horizontalmente */
+    width: 15px; /* Largura do ícone do carrinho */
+    height: 15px; /* Altura do ícone do carrinho */
+    background-image: url("caminho/para/icone-do-carrinho.png"); /* Caminho para a imagem do ícone do carrinho */
+    background-size: cover; /* Ajusta o tamanho da imagem do ícone */
+  }
+
+/*  .icone-carringo img{
+    width: 26px;
+    height: 26px;
+    margin-left: 18px;
+    margin-top: 0.5em;
+}
+
+.iconesLogo__fatec {
+    width: auto;
+    height: 46px;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    padding: 0 1em;
+}
+    
+.icones__redeSociais {
+    display: flex;
+    justify-content: center;
+}    
+
+
+.iconesRedesSocias_icone {
+    width: 26px;
+    height: 26px;
+    margin-left: 18px;
+    margin-top: 0.5em;
+}
+    
+    */

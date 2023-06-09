@@ -1,0 +1,7 @@
+.contato__input {
+    width: 100%;
+    height: 30px;
+    border: 1.5px solid var(--formulario-borda);
+    border-radius: 8px;
+    margin-bottom: .4em;
+}

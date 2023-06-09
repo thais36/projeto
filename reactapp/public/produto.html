@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema web da Atlética da FATEC Zona Leste">
+    <meta name="keywords" content="Atlética, FATEC, Zona Leste">
+    <meta name="author" content="Talita Santos, Thais Almeida">
+    <!--CSS links-->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="assets\css\base.css">
+    <link rel="stylesheet" href="assets\css\breadcrumb.css">
+    <link rel="stylesheet" href="assets\css\cabecalho.css">
+    <link rel="stylesheet" href="assets\css\acessibilidade\acessibilidade.css">
+    <link rel="stylesheet" href="assets\css\acessibilidade\acessibilidade-atalhos.css">
+    <link rel="stylesheet" href="assets\css\acessibilidade\acessibilidades-links.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-superior.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-botao.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-dropdown.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-links.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\logo-atletica.css">
+    <link rel="stylesheet" href="assets\css\banner\banner-imagem.css">
+    <link rel="stylesheet" href="assets\css\banner\banner-titulo.css">
+    <link rel="stylesheet" href="assets\css\banner\banner.css">
+    <link rel="stylesheet" href="assets\css\mural\mural.css">
+    <link rel="stylesheet" href="assets\css\mural\mural-titulo.css">
+    <link rel="stylesheet" href="assets\css\mural\noticia-conteudo.css">
+    <link rel="stylesheet" href="assets\css\mural\noticia-descricao.css">
+    <link rel="stylesheet" href="assets\css\mural\noticia-imagem.css">
+    <link rel="stylesheet" href="assets\css\mural\noticia-titulo.css">
+    <link rel="stylesheet" href="assets\css\mural\noticia.css">
+    <link rel="stylesheet" href="assets\css\mural\noticias.css">
+    <link rel="stylesheet" href="assets\css\mapa\mapa.css">
+    <link rel="stylesheet" href="assets\css\mapa\mapa-titulo.css">
+    <link rel="stylesheet" href="assets\css\mapa\mapa-descricao.css">
+    <link rel="stylesheet" href="assets\css\mapa\mapa-iframe.css">
+    <link rel="stylesheet" href="assets\css\rodape.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\icones__redeSociais.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\icones.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\iconesLogo-fatec.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\iconesRedesSocias-icone.css">
+    <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento-descricao.css">
+    <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento.css">
+    <!-- Loja -->
+    <link rel="stylesheet" href="assets\css\loja.css">
+    <link rel="stylesheet" href="assets\css\loja\loja-descricao.css">
+    <link rel="stylesheet" href="assets\css\loja\loja-quadro.css">
+    <link rel="stylesheet" href="assets\css\loja\produto-cor.css">
+    <link rel="stylesheet" href="assets\css\loja\produto-imagem.css">
+    <link rel="stylesheet" href="assets\css\loja\produto-tamanho.css">
+    <link rel="stylesheet" href="assets\css\loja\produto-titulo.css">
+    <link rel="stylesheet" href="assets\css\loja\produto-valor.css">
+    <link rel="stylesheet" href="assets\css\loja\produto.css">
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/JS/contraste.js"></script>
+    <!--icones links-->
+    <link rel="icon" href="assets\img\icon\logo_icone.ico" type="image/x-icon">
+    <title>Add Produto</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <section class="acessibilidade">
+            <ul class="acessibilidade__atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a>
+                </li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+            </ul>
+            <ul class="acessibilidade__links">
+                <li><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </section>
+        <section class="menu-superior">
+            <a href="index.html"><img class="logo-atletica" src="./assets/img/menu-superior/logo_atletica.png"
+                    alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca"></a>
+            <nav class="menu" id="#menu">
+                <label for="menu__botao"><img class="menu__dropdown" data-menuImagem
+                        src="./assets/img/menu-superior/menu_white.ico"
+                        alt="Imagem do botão de menu contendo três faixas brancas"></label>
+                <input type="checkbox" class="menu__botao" id="menu__botao" data-menuBotao onclick="MudaImg()">
+                <ul class="menu__links">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                    <li><a href="modalidades.html">MODALIDADES</a></li>
+                    <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="loja_virtual.html">LOJA VIRTUAL</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="login.html">ENTRAR</a></li>
+                    <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main id="conteudo">
+
+        <!--Plugin VLibras-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- breadcrumb -->
+        <ul class="breadcrumb">
+
+
+
+            <title>Adicionar Produto</title>
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous" />
+            <style>
+                /* Estilos CSS para exibir a imagem */
+                img {
+                    max-width: 100px;
+                    max-height: 100px;
+                }
+
+                .center {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+            </style>
+            </head>
+
+            <body>
+                <h1>Adicionar Produto</h1>
+                <div class="center">
+                    <form id="productForm">
+                        <label for="image">Imagem:</label>
+                        <input type="file" id="image" accept="image/*"><br>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" required><br>
+                        <label for="price">Preço:</label>
+                        <input type="number" id="price" required><br>
+                        <label for="color">Cor:</label>
+                        <input type="text" id="color" required><br>
+                        <label for="size">Tamanho:</label>
+                        <input type="text" id="size" required><br>
+                        <button type="submit">Adicionar Produto</button>
+                    </form>
+                    <ul id="productList"></ul>
+                    <script src="script.js"></script>
+            </body>
+
+</html>

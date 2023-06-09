@@ -1,0 +1,30 @@
+import React from "react";
+import produto from "./produto";
+import ListaProdutos from "./ListaProdutos"; // Importe o componente ListaProdutos
+export default LojaVirtual;
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import LojaVirtual from "./LojaVirtual"; // Importe o componente LojaVirtual
+
+function LojaVirtual() {
+  return (
+    <div>
+      {/* Renderize outros componentes da loja virtual aqui */}
+      <ListaProdutos /> {/* Renderize o componente ListaProdutos */}
+    </div>
+  );
+}
+
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={LojaVirtual} /> {/* Configure a rota da loja virtual */}
+        {/* Configure outras rotas da sua aplicação aqui */}
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;

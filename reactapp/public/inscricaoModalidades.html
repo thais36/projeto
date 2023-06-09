@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema web da Atlética da FATEC Zona Leste">
+    <meta name="keywords" content="Atlética, FATEC, Zona Leste">
+    <meta name="author" content="Talita Santos, Thais Almeida">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="assets\css\base.css">
+    <link rel="stylesheet" href="assets\css\breadcrumb.css">
+    <link rel="stylesheet" href="assets\css\cabecalho.css">
+    <link rel="stylesheet" href="assets\css\acessibilidade\acessibilidade.css">
+    <link rel="stylesheet" href="assets\css\acessibilidade\acessibilidade-atalhos.css">
+    <link rel="stylesheet" href="assets\css\acessibilidade\acessibilidades-links.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-superior.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-botao.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-dropdown.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\menu-links.css">
+    <link rel="stylesheet" href="assets\css\menu-superior\logo-atletica.css">
+    
+    <link rel="stylesheet" href="assets\css\formularios\inscricao-modalidades.css">
+    
+    <link rel="stylesheet" href="assets\css\rodape.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\icones__redeSociais.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\icones.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\iconesLogo-fatec.css">
+    <link rel="stylesheet" href="assets\css\rodape-icones\iconesRedesSocias-icone.css">
+    <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento-descricao.css">
+    <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento.css">
+    <link rel="icon" href="assets\img\icon\logo_icone.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/JS/contraste.js"></script>
+    <title>Inscreva-se</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="acessibilidade">
+            <ul class="acessibilidade__atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+            </ul>
+            <ul class="acessibilidade__links">
+                <li><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </section>
+        <section class="menu-superior">
+            <a href="index.html"><img class="logo-atletica" src="./assets/img/menu-superior/logo_atletica.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca"></a>
+            <nav class="menu" id="#menu">
+                <label for="menu__botao"><img class="menu__dropdown" data-menuImagem src="./assets/img/menu-superior/menu_white.ico" alt="Imagem do botão de menu contendo três faixas brancas"></label>
+                <input type="checkbox" class="menu__botao" id="menu__botao" data-menuBotao onclick="MudaImg()">
+                <ul class="menu__links">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                    <li><a href="modalidades.html">MODALIDADES</a></li>
+                    <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="loja_virtual.html">LOJA VIRTUAL</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="login.html">ENTRE OU CADASTRE-SE</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main id="conteudo">
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <div class="container">
+            <section class="descricao">
+                <h1 class="descricao__titulo">Inscrição: Modalidades</h1>
+                <p class="descricao__texto">Venha fazer parte dos times da Atlética</p>
+            </section>
+            <div class="incricao__caixa">
+                <form action="" class="inscricao__form">
+                    <div class="inscricao__caixa">
+                        <div class="inscricao__select">    
+                            <label for="modalidade">Escolha sua modalidade esportiva</label>
+                            <select name="modalidade">
+                                <option value="Futsal">Futsal</option>
+                                <option value="Basquete">Basquete</option>
+                                <option value="Voleibol">Voleibol</option>  
+                                <option value="Voleibol">Xadrez</option>        
+                            </select>
+                            <label for="genero">Gênero</label>
+                            <select name="genero" id="">
+                                <option value="Masculino">Maculino</option>
+                                <option value="Feminino">Feminino</option>  
+                                <option value="Masculino">Misto</option>     
+                            </select>
+                            <label for="horario">Escolha dia e horário do Treino</label>
+                            <select name="horario" id="">
+                                <option value="Terca">Terça-feira das 10:00 as 12:00 horas</option>
+                                <option value="Quarta">Quarta-feira das 14:00 as 16:00 horas</option>
+                                <option value="Quinta">Quinta-feira das 16:00 as 18:00 horas</option>   
+                            </select>
+                            <label for="equipamento">Equipamento necessário para os treinos</label>
+                            <input type="text" name="equipamento" id="" value="Sem recomendação">
+                        </div>
+                        <div class="inscricao__img">
+                            <img src="assets\img\modalidades\futsal.png" alt="" class="inscricao img">
+                        </div>
+                    </div>
+                            <div class="form__botoes"><br>
+                                <input class="botao__cadastrar" type="submit" value= "Cadastrar" >
+                                <input class="botao__contato" type="button" value= "Entrar em Contato" >
+                            </div>
+                    </form>
+            </div>
+        </div>
+       
+
+    </main>
+    <footer class="rodape" id="rodape">
+        <section class="icones">
+            <div class="icones__logo">
+               <a href="http://www.fateczl.edu.br/" target="_blank" rel="noopener"><img class="iconesLogo__fatec" src="assets\img\rodape\logo_fatec_branco.png" alt="Logo da Fatec na cor branca"></a>
+            </div>
+            <div class="icones__redeSociais">
+                <a href="https://www.facebook.com/atleticafateczl/" target="_blank" rel="noopener"><img class="iconesRedesSocias_icone" src="assets\img\rodape\facebook_img_white.ico" alt="imagem do ícone do facebook na cor branca"></a>
+                <a href="https://www.instagram.com/atleticafateczl/" target="_blank" rel="noopener"><img class="iconesRedesSocias_icone" src="assets\img\rodape\instagram_img_white.ico" alt="imagem do ícone do instagram na cor branca"></a>
+                <a href="mailto:fateczlatletica@gmail.com" target="_blank" rel="noopener"><img class="iconesRedesSocias_icone" src="assets\img\rodape\email_img.ico" alt="imagem do ícone de email na cor branca"></a>
+            </div>
+        </section>
+        <div class="desenvolvimento">
+            <p class="desenvolvimento__descricao"> Atletica Fatec Zona Leste &copy; 2023</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./assets/JS/fonte.js"></script>
+    <script type="text/javascript" src="assets\JS\menu_movel.js"></script>
+</body>
+</html>

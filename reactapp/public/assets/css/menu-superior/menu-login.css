@@ -1,0 +1,26 @@
+.menu-login li ul{
+  position:absolute;
+  top: 25px;
+  left: 0;
+  background-color:#b00000;
+  display: none;
+}
+
+.menu-login li:hover ul, #menu li.over ul{
+  display: block;
+}
+
+.menu-login li ul li{
+  border: 1px solid #fff;
+  display: block; 
+  width: 150px;
+}
+/*menu responsivo*/
+label[for="bt_menu"]{
+  display: none;
+}
+#bt_menu{
+  display: none;
+
+}
+

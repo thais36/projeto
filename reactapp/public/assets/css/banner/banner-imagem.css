@@ -1,0 +1,48 @@
+.banner__imagem {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+}
+
+.indexImagem {
+    background-image: url("../../img/banner/home.jpg");
+}
+
+.quemSomosImagem {
+    background-image: url("../../img/banner/banner_quemsomos.jpg"); 
+}
+
+.modalidadesImagem {
+    background-image: url("../../img/banner/modalidades.jpg");
+}
+
+.campeonatosImagem {
+    background-image: url("../../img/banner/campeonatos_mural.jpg");
+}
+
+.lojaImagem {
+    background-image: url("../../img/banner/Design\ sem\ nome.jpg");
+    background-repeat: unset;
+    background-size: 1490px;
+}
+
+.eventosImagem {
+    background-image: url("../../img/banner/eventos_baner_atletica.jpg");
+}
+
+.contatoImagem {
+    background-image: url("../../img/banner/contato.jpg");
+}
+
+
+@media screen and (max-width: 550px) {
+    .banner__imagem {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+    }
+}

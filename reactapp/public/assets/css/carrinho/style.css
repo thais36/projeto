@@ -1,0 +1,116 @@
+/* Barra de navegação */
+.carrinho {
+    width: 30px;
+    color: white;
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  
+  .carrinho:hover {
+    color: #cacaca;
+    cursor: pointer;
+  }
+  
+  .badge {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+  }
+  
+  /* Card loja_virtual */
+  .card-loja_virtual {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px #cacaca;
+  }
+  
+  .imagem-loja_virtual {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .descricao-loja_virtual {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .botao-comprar {
+    background-color: black;
+    color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  
+  .botao-comprar:hover {
+    background-color: orange;
+  }
+  
+  /* Display loja_virtual */
+  .loja_virtual {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Carrinho */
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .loja_virtual-carrinho {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .card-loja_virtual-carrinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 280px;
+    margin: 10px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px #cacaca;
+  }
+  
+  .card-loja_virtual-carrinho h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .card-loja_virtual-carrinho h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .botao-remover {
+    color: white;
+    background-color: rgb(156, 4, 4);
+  }
+  
+  .botao-remover:hover {
+    color: white;
+    background-color: rgb(255, 0, 0);
+  }
+
