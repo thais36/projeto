@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from django.contrib import admin
 
@@ -10,7 +11,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ycl_ep-*8e*r4ek0v1@1@c-m7i@v0f_5saz1lyx0x@q7s4niuu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
 DEBUG = True
 
 #ALLOWED_HOSTS = ['https://integrado23.herokuapp.com/']
@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'whitenoise.runserver_nostatic',
     #'simplecep',
     'modalidade',
     'cadastro',
@@ -43,9 +44,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
    # 'simplecep.middleware.SimpleCepMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'gestao.urls'
+
+STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
 
 TEMPLATES = [
     {
@@ -123,6 +127,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
