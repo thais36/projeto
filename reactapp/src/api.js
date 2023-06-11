@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-const API_URL = 'http://localhost:8000/admin/modalidade/modalidade'; // Certifique-se de usar o URL correto do seu backend Django
+const API_URL = 'http://localhost:8000/admin/modalidade'; // Certifique-se de usar o URL correto do seu backend Django
 
 export const getModalidades = () => {
   return axios.get(`${API_URL}/modalidade/`)
