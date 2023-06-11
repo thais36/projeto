@@ -1,9 +1,8 @@
 from django.db import models
-#from .models import Modalidade
-from django import forms
+from django.shortcuts import render
 from uuid import uuid4
 
-    
+
 class Modalidade(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     nome = models.CharField(max_length=255)
@@ -13,9 +12,14 @@ class Modalidade(models.Model):
 
     def __str__(self):
         return self.nome
-        
+
     class Meta:
         db_table = 'modalidade'
-        verbose_name_plural = 'modalidade'
+        verbose_name_plural = 'modalidades'
         verbose_name = 'modalidade'
         ordering = ['nome']
+
+    @staticmethod
+    def listar_modalidades(request):
+        modalidades = Modalidade.objects.all()
+        return render(request, 'modalidades.html', {'modalidades': modalidades})
