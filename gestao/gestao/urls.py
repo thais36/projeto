@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.staticfiles.views import serve
 
 from rest_framework import routers
 
@@ -18,6 +19,8 @@ urlpatterns = [
     path('campeonato/', include('campeonato.urls')),
     path('evento/', include('evento.urls')),
     path('modalidade/', include('modalidade.urls')),
-    path('modalidades/', include('modalidade.urls')),  # Add this line
+    #path('modalidades/', include('modalidade.urls')),  # Add this line
+    
+    
 ]
 
