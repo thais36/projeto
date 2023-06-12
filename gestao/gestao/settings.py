@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-ycl_ep-*8e*r4ek0v1@1@c-m7i@v0f_5saz1lyx0x@q7s4niuu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['https://integrado23.herokuapp.com/']
+ALLOWED_HOSTS = ['https://integrado23.herokuapp.com/']
 
 
 INSTALLED_APPS = [
