@@ -1,3 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+"engines": {
+  "node": "14.x"
+},
