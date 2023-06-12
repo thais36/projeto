@@ -1,3 +1,3 @@
-web: node server.js
+web:node index.js
 
 web: gunicorn projeto.wsgi --log-file -
