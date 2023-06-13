@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "engines": {
     "node": "18.14.2",
-    "npm" : "9.7.1"
+    "npm" : "9.7.1",
+    "yarn": "1.x"
   },
   "scripts": {
     "dev": "react-scripts start",
