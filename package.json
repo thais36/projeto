@@ -1,6 +1,9 @@
 {
   "name": "reactapp",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.14.2"
+  },
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
@@ -15,8 +18,5 @@
     "react-router-dom": "^6.12.1",
     "react-scripts": "^5.0.1",
     "serve": "^14.2.0"
-  },
-  "engines": {
-    "node": "18.14.2"
   }
 }
