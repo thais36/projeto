@@ -7,8 +7,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createRoot} from 'react-dom';
 
-// Exemplo de uso da função createRoot
-
 ReactDOM.render( 
   <React.StrictMode> 
     <App />

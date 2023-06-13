@@ -18,3 +18,8 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor iniciado na porta ${port}`);
 });
+
+Path: reactapp\src\index.js
+/* eslint-disable no-lone-blocks */
+/* eslint-disable no-unused-vars */
+import React from 'react';
