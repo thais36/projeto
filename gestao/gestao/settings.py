@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from django.contrib import admin
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,8 +78,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'gestao.wsgi.application'
 
+ # Configurações do banco de dados
+DATABASES = {
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+}
 
-# Database / conectando com o banco de dados SQLite
+# Database / conectando com o banco de dados SQLite - incompativel com o heroku
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # DATABASES = {
