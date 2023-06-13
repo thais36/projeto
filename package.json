@@ -2,7 +2,8 @@
   "name": "reactapp",
   "version": "1.0.0",
   "engines": {
-    "node": "18.14.2"
+    "node": "18.14.2",
+    "npm" : "9.7.1"
   },
   "scripts": {
     "dev": "react-scripts start",
