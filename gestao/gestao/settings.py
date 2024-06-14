@@ -60,7 +60,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'reactapp', 'public', 'index.html'),
+           # os.path.join(BASE_DIR, 'reactapp', 'public', 'index.html'),
+           os.path.join(BASE_DIR, 'template'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,19 +80,19 @@ TEMPLATES = [
 WSGI_APPLICATION = 'gestao.wsgi.application'
 
  # Configurações do banco de dados
-DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
-}
+#DATABASES = {
+ #   'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+#}
 
 # Database / conectando com o banco de dados SQLite - incompativel com o heroku
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+     'default': {
+      'ENGINE': 'django.db.backends.sqlite3',
+     'NAME': BASE_DIR / 'db.sqlite3',
+    }
+ }
 
 
 # #Conectando com o banco de dados MySQL

@@ -1,0 +1,38 @@
+{% url 'home' as home_url %}
+{% url 'cadastro' as cadastro_url %}
+{% url 'campeonato' as campeonato_url %}
+{% url 'evento' as evento_url %}
+{% url 'modalidade' as modalidade_url %}
+
+<nav class="navbar navbar-expand-lg mb-5" style="background-color: brown; color:aliceblue;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ home_url }}">
+            <img src="https://i.postimg.cc/mkmTgGYx/27a6a5-89f7f084ea1f42bba46d71b5a51544b3-mv2-d-2953-2953-s-4-2.png"
+                width="80" height="80" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                <li class="nav-item {% if request.path == home_url %} active {% endif %}">
+                    <a class="nav-link" href="{{ home_url }}" style="color:aliceblue">Inicio <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item {% if request.path == cadastro_url %} active {% endif %}">
+                    <a class="nav-link" href="{{ cadastro_url }}" style="color:aliceblue">Cadastro</a>
+                </li>
+                <li class="nav-item {% if request.path == campeonato_url %} active {% endif %}">
+                    <a class="nav-link" href="{{ campeonato_url }}" style="color:aliceblue">Campeonato</a>
+                </li>
+                <li class="nav-item {% if request.path == evento_url %} active {% endif %}">
+                    <a class="nav-link" href="{{ evento_url }}" style="color:aliceblue">Evento</a>
+                </li>
+                <li class="nav-item {% if request.path == modalidade_url %} active {% endif %}">
+                    <a class="nav-link" href="{{ modalidade_url }}" style="color:aliceblue">Modalidade</a>
+                </li>
+            </ul>
+
+           </div>
+          </div> 
+</nav>

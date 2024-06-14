@@ -1,20 +1,20 @@
 from django.shortcuts import render, redirect
-
+from .models import Modalidade
 
 def home(request):
     modalidades = Modalidade.objects.all()
-    return render(request, 'index.html', {'modalidades': modalidades})
+    return render(request, 'modalidade.html', {'modalidades': modalidades})
 
 
 def salvar(request):
     vnome = request.POST('nome')
     Modalidade.objects.create(nome=vnome)
-    modalidades = Mdalidade.objects.all()
-    return render(request, 'index.html', {'modalidades': modalidades})
+    modalidades = Modalidade.objects.all()
+    return render(request, 'modalidade.html', {'modalidades': modalidades})
 
 def editar(request, id):
     modalidade = Modalidade.objects.get(id=id)
-    return render(request, 'update.html', {'modalidades': modalidades})
+    return render(request, 'update.html', {'modalidades': modalidade})
 
 def update(request, id):
     vnome = request.POST.get('nome')

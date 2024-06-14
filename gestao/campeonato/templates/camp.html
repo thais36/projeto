@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evento</title>
-</head>
-<body>
+{%extends "base.html"%}
 
+{%block content%}
     <ul>
 
-        {% for evento in evento %}
-        <li> {{evento.id}} - {{evento.nome}} 
-        <a href="{% url 'editar' evento.id %}" >Editar</a>
-        <a href="{% url 'delete' evento.id %}" >Deletar</a>
+        {% for campeonato in campeonato %}
+        <li> {{campeonato.id}} - {{campeonato.nome}} 
+        <a href="{% url 'editar' campeonato.id %}" >Editar</a>
+        <a href="{% url 'delete' campeonato.id %}" >Deletar</a>
         </li>
         {% endfor %}
     </ul>
@@ -21,7 +14,7 @@
     <form action="{% url 'salvar' %}" method="POST">
         {% csrf_token %}
 
-        <input type="hidden" name="id" id="id" value="{{evento.id}}">    
+        <input type="hidden" name="id" id="id" value="{{campeonato.id}}">    
 
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome">
@@ -48,6 +41,5 @@
        <!-- <input type="submit" value="salvar"> -->
 
     </form>
-    
-</body>
-</html>
+
+    {%endblock%}

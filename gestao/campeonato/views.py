@@ -1,16 +1,20 @@
 from django.shortcuts import render, redirect
+from .models import Campeonato
+
+def campeonato_view(request):
+    return render(request, 'campeonato.html')
 
 
 def home(request):
     campeonatos = Campeonato.objects.all()
-    return render(request, 'index.html', {'campeonatos': campeonatos})
+    return render(request, 'camp.html', {'campeonatos': campeonatos})
 
 
 def salvar(request):
     vnome = request.POST('nome')
     Campeonato.objects.create(nome=vnome)
     campeonatos = Campeonato.objects.all()
-    return render(request, 'index.html', {'campeonatos': campeonatos})
+    return render(request, 'camp.html', {'campeonatos': campeonatos})
 
 def editar(request, id):
     campeonato = Campeonato.objects.get(id=id)

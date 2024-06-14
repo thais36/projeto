@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from .models import Pessoa
+
 
 
 def home(request):
